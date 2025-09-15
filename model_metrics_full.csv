@@ -1,0 +1,6 @@
+Model,Target,Features,Parameters,MAE,R2,AUC,F1
+Linear Regression,next_ret,Technical only,"fit_intercept=True, copy_X=True, n_jobs=None, positive=False",0.0069,-0.037,,
+Logistic Regression (BASE),updown,Technical only,"penalty=l2, dual=False, tol=1e-4, C=1.0, fit_intercept=True, intercept_scaling=1, solver=liblinear, max_iter=100",,,0.472,0.675
+XGBoost Regressor,next_ret,Technical only,"objective=reg:squarederror, learning_rate=0.1, max_depth=3, n_estimators=100, subsample=1, colsample_bytree=1, gamma=0, reg_alpha=0, reg_lambda=1",0.0094,-0.483,,
+XGBoost Classifier,updown,Technical only,"objective=binary:logistic, learning_rate=0.1, max_depth=3, n_estimators=100, subsample=1, colsample_bytree=1, gamma=0, reg_alpha=0, reg_lambda=1",,,0.474,0.238
+Logistic Regression + FinBERT,updown,Technical + Sentiment,"penalty=l2, dual=False, tol=1e-4, C=1.0, fit_intercept=True, intercept_scaling=1, solver=liblinear, max_iter=100",,,0.472,0.675

@@ -9,10 +9,11 @@ Price data were normalized into a flat OHLCV schema, and dates were deduplicated
 Two categories of features were constructed. Price-based features included daily percent returns, a 20-day simple moving average, and Ichimoku Cloud components (tenkan, kijun, spans A and B). Sentiment features were aggregated daily by averaging headline-level probabilities, then lagged and smoothed to prevent forward-looking bias. Target variables included next-day returns for regression and an up/down classification indicator.
 All model inputs were standardized using scikit-learn’s *StandardScaler*, ensuring comparability across features. An 80/20 chronological split preserved the time order of data, with the final 20% reserved for out-of-sample evaluation.
 Three families of models were trained to satisfy rubric requirements for methodological diversity:
-•	**Linear and Logistic Regression** as baseline models
-•	**XGBoost Regressor and Classifier** as nonlinear methods
-•	**Logistic Regression with sentiment** integration as a hybrid approach
+**Linear and Logistic Regression** as baseline models
+**XGBoost Regressor and Classifier** as nonlinear methods
+**Logistic Regression with sentiment** integration as a hybrid approach
 Each model was tested both with and without FinBERT sentiment features to isolate incremental contribution.
+
 ## Exploratory Data Analysis
 Exploratory data analysis confirmed well-known characteristics of SPY returns. A histogram of daily returns showed the heavy concentration near zero with fat-tailed extremes, underscoring the inherent difficulty of prediction. Ichimoku Cloud overlays visually distinguished trending versus ranging regimes, while a correlation heatmap quantified weak linear relationships between price-based features and next-day returns. FinBERT sentiment displayed intuitive alignment with market regimes. A five-day rolling average of sentiment scores trended upward during rallies and downward during sell-offs.
 

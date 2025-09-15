@@ -1,0 +1,6 @@
+Model,Target,MAE,R2_or_AUC,F1
+Linear Regression,next_ret,0.0069,-0.037,
+Logistic Regression (BASE),updown,,0.472,0.675
+XGBoost Regressor,next_ret,0.0094,-0.483,
+XGBoost Classifier,updown,,0.474,0.238
+Logistic Regression + FinBERT,updown,,0.472,0.675

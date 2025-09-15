@@ -1,6 +1,0 @@
-Model,Target,Features,Parameters,MAE,R2,AUC,F1
-Linear Regression,next_ret,Technical only,default scikit-learn,0.0069,-0.037,,
-Logistic Regression (BASE),updown,Technical only,"penalty=l2, solver=liblinear",,,0.472,0.675
-XGBoost Regressor,next_ret,Technical only,"learning_rate=0.1, max_depth=3, n_estimators=100",0.0094,-0.483,,
-XGBoost Classifier,updown,Technical only,"learning_rate=0.1, max_depth=3, n_estimators=100",,,0.474,0.238
-Logistic Regression + FinBERT,updown,Technical + Sentiment,"penalty=l2, solver=liblinear",,,0.472,0.675

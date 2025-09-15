@@ -16,4 +16,4 @@ Each model was tested both with and without FinBERT sentiment features to isolat
 ## Exploratory Data Analysis
 Exploratory data analysis confirmed well-known characteristics of SPY returns. A histogram of daily returns showed the heavy concentration near zero with fat-tailed extremes, underscoring the inherent difficulty of prediction. Ichimoku Cloud overlays visually distinguished trending versus ranging regimes, while a correlation heatmap quantified weak linear relationships between price-based features and next-day returns. FinBERT sentiment displayed intuitive alignment with market regimes. A five-day rolling average of sentiment scores trended upward during rallies and downward during sell-offs.
 
-*Figure 1. Histogram of SPY daily returns — clustering near zero with fat tails.*
+![*Figure 1. Histogram of SPY daily returns — clustering near zero with fat tails.*](Screenshot 2025-09-14 at 1.39.22 PM.png)
